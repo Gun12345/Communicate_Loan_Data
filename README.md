@@ -1,16 +1,4 @@
-Since your project structure is:
-
-* `.gitignore`
-* `README.md`
-* `exploration.html`
-* `exploration.ipynb`
-* `output_toggle.tpl`
-* `slide_deck.ipynb`
-* `slide_deck.slides.html`
-
-you can use this README directly:
-
-# Communicate Loan Data Findings
+Communicate Loan Data Findings
 
 ## Overview
 
