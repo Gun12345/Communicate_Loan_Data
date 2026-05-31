@@ -1,129 +1,101 @@
+Since your project structure is:
+
+* `.gitignore`
+* `README.md`
+* `exploration.html`
+* `exploration.ipynb`
+* `output_toggle.tpl`
+* `slide_deck.ipynb`
+* `slide_deck.slides.html`
+
+you can use this README directly:
+
 # Communicate Loan Data Findings
 
-## Project Overview
+## Overview
 
-This project focuses on exploring and communicating insights from a loan dataset through data analysis and visualization. The objective is to identify patterns in borrower characteristics, loan attributes, and loan outcomes, and effectively present the findings using explanatory visualizations.
+This project analyzes a loan dataset to uncover patterns in borrower characteristics, loan attributes, and loan performance. The objective is to communicate meaningful insights through exploratory and explanatory data visualizations.
 
-The analysis follows a structured data analysis process, including data cleaning, exploratory data analysis (EDA), and explanatory data visualization to communicate key insights to stakeholders.
-
----
+The project follows the data analysis process of data cleaning, exploration, visualization, and presentation of findings.
 
 ## Dataset
 
-The dataset contains information about loans and borrowers, including loan amounts, interest rates, borrower income, credit history, employment details, and loan status.
+The dataset contains information about loans and borrowers, including financial, demographic, and loan-related variables.
 
-### Main Features
+Key variables analyzed include:
 
 * Loan Amount
 * Borrower Income
+* Interest Rate
 * Credit Score
 * Debt-to-Income Ratio (DTI)
 * Employment Status
-* Home Ownership
 * Loan Term
-* Interest Rate
 * Loan Status
 
----
+## Files Included
 
-## Project Objectives
+| File                     | Description                                                              |
+| ------------------------ | ------------------------------------------------------------------------ |
+| `exploration.ipynb`      | Jupyter Notebook containing exploratory data analysis and visualizations |
+| `exploration.html`       | Exported HTML version of the exploratory analysis                        |
+| `slide_deck.ipynb`       | Notebook containing explanatory visualizations and presentation findings |
+| `slide_deck.slides.html` | HTML slide presentation generated from the explanatory notebook          |
+| `output_toggle.tpl`      | Template used for notebook export formatting                             |
+| `.gitignore`             | Specifies files ignored by Git                                           |
+| `README.md`              | Project documentation                                                    |
 
-The main objectives of this project are:
+## Project Workflow
 
-* Clean and preprocess the loan dataset.
-* Explore distributions and relationships among variables.
-* Identify factors associated with loan performance.
-* Create clear and effective visualizations.
-* Communicate findings through an explanatory presentation.
+### 1. Data Cleaning
 
----
+The dataset was cleaned by:
 
-## Project Structure
+* Handling missing values
+* Removing duplicate records
+* Correcting data types
+* Filtering invalid observations
+* Creating derived variables where necessary
 
-```text
-communicate-loan-data/
-│
-├── data/
-│   └── loan_data.csv
-│
-├── notebooks/
-│   ├── Part_I_Exploration.ipynb
-│   └── Part_II_Explanatory.ipynb
-│
-├── visuals/
-│   └── explanatory_slides.pdf
-│
-├── README.md
-└── requirements.txt
-```
+### 2. Exploratory Analysis
 
----
+The exploratory analysis focused on:
 
-## Data Cleaning
+* Distribution of loan amounts
+* Distribution of borrower income
+* Interest rate patterns
+* Loan status frequencies
+* Relationships between borrower characteristics and loan outcomes
 
-The following data preparation steps were performed:
+### 3. Explanatory Analysis
 
-* Removed duplicate records.
-* Handled missing values.
-* Corrected data types.
-* Filtered invalid observations.
-* Created derived features where necessary.
-* Standardized categorical variables.
-
----
-
-## Exploratory Analysis
-
-The exploratory analysis included:
-
-### Univariate Analysis
-
-* Distribution of loan amounts.
-* Distribution of borrower income.
-* Distribution of interest rates.
-* Loan status frequencies.
-
-### Bivariate Analysis
-
-* Loan amount vs. borrower income.
-* Credit score vs. interest rate.
-* Debt-to-income ratio vs. loan status.
-
-### Multivariate Analysis
-
-* Relationship between income, credit score, and loan performance.
-* Impact of borrower characteristics on interest rates.
-* Comparison of loan outcomes across borrower segments.
-
----
+Key findings were selected and presented using explanatory visualizations to communicate the most important insights effectively.
 
 ## Key Findings
 
-### 1. Credit Score and Interest Rate
+### Credit Score and Interest Rate
 
-Borrowers with higher credit scores generally received lower interest rates, indicating lower perceived lending risk.
+Borrowers with higher credit scores generally received lower interest rates, reflecting lower lending risk.
 
-### 2. Income and Loan Amount
+### Income and Loan Amount
 
-Higher-income borrowers tended to receive larger loan amounts compared to lower-income borrowers.
+Higher-income borrowers tended to obtain larger loan amounts compared to lower-income borrowers.
 
-### 3. Debt-to-Income Ratio
+### Debt-to-Income Ratio
 
-Borrowers with higher debt-to-income ratios showed a greater likelihood of loan delinquency or default.
+Higher debt-to-income ratios were associated with an increased likelihood of poor loan performance.
 
-### 4. Loan Risk and Interest Rates
+### Loan Risk and Pricing
 
-Loans classified as higher risk typically carried higher interest rates.
+Loans considered riskier typically carried higher interest rates.
 
-### 5. Employment Stability
+### Employment Stability
 
-Borrowers with stable employment records generally demonstrated better loan repayment performance.
-
----
+Borrowers with stable employment histories generally showed stronger repayment performance.
 
 ## Tools and Libraries
 
-The project was completed using:
+The analysis was performed using:
 
 * Python
 * Pandas
@@ -132,71 +104,41 @@ The project was completed using:
 * Seaborn
 * Jupyter Notebook
 
----
+## How to View the Project
 
-## Installation
+### Exploratory Analysis
 
-1. Clone the repository:
+Open:
 
-```bash
-git clone https://github.com/yourusername/communicate-loan-data.git
-```
+`exploration.html`
 
-2. Navigate to the project directory:
+or run:
 
-```bash
-cd communicate-loan-data
-```
+`exploration.ipynb`
 
-3. Install the required packages:
+### Presentation Slides
 
-```bash
-pip install -r requirements.txt
-```
+Open:
 
----
+`slide_deck.slides.html`
 
-## Running the Project
+or run:
 
-Launch Jupyter Notebook:
+`slide_deck.ipynb`
 
-```bash
-jupyter notebook
-```
+## Conclusion
 
-Open the notebooks:
-
-* Part_I_Exploration.ipynb
-* Part_II_Explanatory.ipynb
-
-Run all cells to reproduce the analysis and visualizations.
-
----
-
-## Results
-
-The analysis demonstrates that borrower creditworthiness, income level, and debt obligations play significant roles in loan outcomes. Through data visualization, these relationships are clearly communicated and provide valuable insights for financial decision-making.
-
----
-
-## Future Work
-
-* Develop machine learning models for loan default prediction.
-* Perform feature engineering to improve predictive performance.
-* Build interactive dashboards using Power BI or Tableau.
-* Incorporate additional borrower and financial data sources.
-
----
+The analysis highlights the importance of borrower creditworthiness, income level, and debt obligations in determining loan outcomes. The visualizations provide clear insights into factors influencing loan performance and lending risk.
 
 ## Author
 
-**Gunveer Singh Thapar**
+Gunveer Singh Thapar
 
 Master's in Human and Social Data Science
 University of Sussex
 
----
-
 ## License
 
-This project is intended for educational, research, and portfolio purposes.
+This project is intended for educational and portfolio purposes.
+
+You can paste this directly into your `README.md` file.
